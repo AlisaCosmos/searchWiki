@@ -2,6 +2,8 @@
 
 ### Демо
 
+https://search-wiki-flax.vercel.app/
+
 ### Стек
 
 - HTML5;
