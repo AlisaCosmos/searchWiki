@@ -1,0 +1,43 @@
+.searchResultShow {
+  margin-top: 50px;
+  //max-width: 768px;
+  &__item {
+    padding: 16px;
+    margin-bottom: 16px;
+    text-align: left;
+    background: linear-gradient(
+      94.9deg,
+      #fff5dd 1.6%,
+      rgba(170, 86, 254, 0.32) 38.13%,
+      rgba(254, 86, 217, 0.28) 58.65%,
+      rgba(86, 254, 254, 0.28) 99.73%
+    );
+
+    border-radius: 16px;
+    &:hover {
+      box-shadow: -10px 10px 50px rgba(0, 0, 0, 0.1), inset 10px 10px 60px rgba(255, 255, 255, 0.4);
+    }
+  }
+  &__title {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  &__button {
+    display: inline-block;
+    padding: 12px 16px;
+    background-color: #a84fff;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 16px;
+    transition: 0.4s;
+    &:hover {
+      background-color: #ff4fa8;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+  }
+  &__title {
+  }
+  &__title_gradient {
+    padding-left: 20px;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(
+      270deg,
+      #98ffff,
+      #e37ed9 14.47%,
+      #40d1ff 27.5%,
+      #aff1ff 42.82%,
+      #ff97af 54.09%,
+      #ff88fa 62.54%,
+      #ffb8dd 72.58%,
+      #ffa2c8 84.03%,
+      #dbc5ff 90.54%,
+      #9effff 97.05%
+    );
+    background-size: 700px 60px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: move_title 30s linear infinite;
+    -webkit-text-fill-color: transparent;
+  }
+  @keyframes move_title {
+    0% {
+      background-position: 0 0;
+    }
+
+    to {
+      background-position: -1000px 0;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import 'vars';
+@import 'fonts';
+@import 'btn';
+@import 'libs/normalize';
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img {
+  max-width: 100%;
+}
+
+body {
+  font-family: $generalFont;
+  //color: $textColor;
+  font-weight: 500;
+  -webkit-text-size-adjust: none; //Предотвратить масштабирование шрифта в альбомной ориентации, разрешив пользователю масштабирование
+}
+main {
+  flex: 1 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.container__row {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 85px; //контейнер 1270
+  /* padding-left: 130px; //контейнер 1180
+  padding-right: 130px; */
+
+  @media (max-width: $tablet) {
+    padding-left: 67px;
+    padding-right: 67px; //добавила отступы после правок дизайна
+  }
+  @media (max-width: $mobile) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $ultra) {
+    max-width: 2220px;
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+}
